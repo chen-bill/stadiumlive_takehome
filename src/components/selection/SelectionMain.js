@@ -7,8 +7,9 @@ import {
   ScrollView,
   Button,
   TouchableOpacity,
-  ImageBackground
+  Image
 } from 'react-native';
+
 
 import { Icon } from 'react-native-elements'
 
@@ -51,11 +52,12 @@ class SelectionMain extends Component {
                 this.props.avatar.selected.menu.name in this.props.avatar.selected.items &&
                   this.props.avatar.selected.items[this.props.avatar.selected.menu.name] == buttonData.groupId ?
                   styles.styleButtonSelected : styles.styleButton}>
-                  <ImageBackground
+                  <Image
                     style={
                       styles.styleButtonImage}
                     source={{uri: `https://api.stadiumliveapp.com/avatars/preview?q=${this.props.avatar.selected.menu.name}:${buttonData.id}`}}
                   >
+                  </Image>
                     {
                 this.props.avatar.selected.menu.name in this.props.avatar.selected.items &&
                   this.props.avatar.selected.items[this.props.avatar.selected.menu.name] == buttonData.groupId ?
@@ -70,7 +72,6 @@ class SelectionMain extends Component {
                       />
                     </View> : null
                     }
-                  </ImageBackground>
               </TouchableOpacity>
             ))}
 
