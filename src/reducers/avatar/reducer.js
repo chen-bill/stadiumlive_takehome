@@ -8,6 +8,7 @@ import {
 const initialstate = {
   avatarData: [],
   receivedAt: null,
+  // TODO add loading screen
   isFetching: true,
 
   avatarUri: 'https://api.stadiumliveapp.com/avatars/preview?q=skin%20tone:male_SKIN_LIGHT1', //default

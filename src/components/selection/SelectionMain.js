@@ -74,7 +74,7 @@ class SelectionMain extends Component {
                     }
               </TouchableOpacity>
             ))}
-
+            <Text> Made with ♥ by Bill</Text>
           </ScrollView>
         </View>
       </View>
